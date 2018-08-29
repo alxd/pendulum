@@ -39,7 +39,7 @@
     <!-- Custom styles for this template -->
 	<link href="css/creative.min.css" rel="stylesheet">
 
-
+    <canvas id="myChart" style="max-width: 500px;"></canvas>
   </head>
 
   <body id="page-top">
@@ -56,8 +56,11 @@
         <div class="collapse navbar-collapse" id="navbarResponsive">
           <ul class="navbar-nav ml-auto">
             <li class="nav-item">
-				<a class="nav-link js-scroll-trigger"href="#about">About</a>
+				<a class="nav-link js-scroll-trigger"href="#about">Purpose</a>
             </li>
+			<li class="nav-item">
+				<a class="nav-link js-scroll-trigger"href="#about">About</a>
+			</li>
 			<li class="nav-item">
               <a class="nav-link js-scroll-trigger" href="#services">Features</a>
 			</li>
@@ -65,7 +68,7 @@
               <a class="nav-link js-scroll-trigger" href="#team">Team</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="#portfolio">Research</a>
+              <a class="nav-link js-scroll-trigger" href="#portfolio">Timeline</a>
             </li>
             <li class="nav-item">
               <a class="nav-link js-scroll-trigger" href="#contact">Contact</a>
@@ -82,7 +85,7 @@
         <div class="row h-100">
           <div class="col-lg-7 my-auto">
             <h1 class="text-uppercase">
-				<strong>Pendulum</strong> <br><h2 class="section-heading">The smart insole for senior adults</h2>
+				<strong>Pendulum</strong> <br><h2 class="section-heading">The smart insole for seniors</h2>
             </h1>
           </div>
 
@@ -126,13 +129,23 @@
       <div class="container">
         <div class="row">
           <div class="col-lg-8 mx-auto text-center">
-			  <h2 class="section-heading text-white"> IoT for the Elderly<br> </h2>
+			  <h2 class="section-heading text-white"> Why Now<br> </h2>
             <hr class="light my-4">
-			<p class="text-faded mb-4"> Our connected insole allows senior adults and their relatives to track their gait characteristics and get recommendations on simple but effective exercises targeted at preventing the risk of falling  </p>
-            <a class="btn btn-light btn-xl js-scroll-trigger" href="#services">Get Started!</a>
+			<h2 class="section-heading text-faded"> Falls are the main cause of death from injury among people over the age of 65</h2>
+			<p class="">Every year 1/3 of all people over 65 are suffering from falls.</p>
+			<!--	<a class="btn btn-light btn-xl js-scroll-trigger" href="#services">Discover Pendulum</a> -->
           </div>
         </div>
       </div>
+	  <div class="card">
+		<div class="donut-chart chart">
+		 <div class="slice one"></div>
+		 <div class="slice two"></div>
+		 <div class="chart-center">
+			 <span></span>
+    </div>
+  </div>
+</div>
     </section>
 
 
@@ -149,7 +162,7 @@
    </div>  -->
 
 
-<   <section class="ftco-section bg-light  ftco-slant ftco-slant-white" id="about">
+   <section class="ftco-section bg-light  ftco-slant ftco-slant-white" id="about">
 	<!--  <div class="container"> -->
 
 	  <div class="row">
@@ -194,17 +207,9 @@
 
 
 	</div> -->
-
+   <div class="container">
 	<div class="card-deck">
-	    <div class="card text-white bg-primary mb-3">
-			<div class="card-header">Purpose</div>
-			<div class="card-body">
-				<h5 class="card-title">Why?</h5>
-				<p class="card-text">Falls are the main cause of death from injury among people over the age of 65. Every year 1/3 of all people over 65 are suffering from falls. We believe that the elderly generation can benefit from new technologies to reduce fall risk, provide real-time feedback to activities from family members, and improve motivation and quality of life. </p>
-			 </div>
-			</div>
-
-	    <div class="card text-white bg-primary mb-3">
+	    <div class="card text-white bg-primary" style="width: 50%">
 		  <div class="card-header">Mission</div>
 		  <div class="card-body">
 			  <h5 class="card-title">What?</h5>
@@ -212,21 +217,16 @@
 		  </div>
 		 </div>
 
-
-
-         <div class="card text-white bg-primary mb-3">
+         <div class="card text-white bg-primary">
 			<div class="card-header">Value</div>
 		    <div class="card-body">
 				<h5 class="card-title">How?</h5>
-				<p class="card-text"> Our sensors monitor user fragility, chance of falling, balance, weight and activity to generate data-driven recommendations</p>
+				<p class="card-text"> Our connected insole allows senior adults and their relatives to track their gait characteristics and generate data-driven recommendations on simple but effective exercises targeted at preventing the risk of falling</p>
 			</div>
 		 </div>
 
-
 	</div>
-
-
-
+   </div>
 
 
 	</section>
@@ -305,7 +305,7 @@
                   <span class="fa-stack fa-4x">
                     <i class="fa fa-child fa-stack-1x text-primary"></i>
 				  </span>
-					<h3>Keep Moving!</h3>
+					<h3>Customized exercised</h3>
                     <p class="text-muted">Our recommendation algorithm helps you find the right exercises to improve your balance</p>
 
                 </div>
@@ -406,7 +406,7 @@
 				  <h4>Dr Micol de Ruvo</h4>
 				  <!--  <p class="text-muted">Co-Founder</p>  -->
 				  <!-- <div class="col-sm-9 text-center" -->
-				  <p class="text-muted">Masters in Biomedical Engineering and PhD in Computational Biology, with extensive experience in using algorithms to solve challenges in life science</p>
+				  <p class="text-muted">Masters in Biomedical Engineering and PhD in Computational Biology, with extensive experience in using mathematical modelling and machine learning for applications in medicine and biology</p>
 				  <ul class="list-inline social-buttons">
 					  <li class="list-inline-item">
 						  <a href="https://www.linkedin.com/in/micol-de-ruvo/">
@@ -423,7 +423,7 @@
 
 	<!-- Publications-->
     <section class="bg-light" id="portfolio">
-      <div class="container">
+    <!--  <div class="container">
         <div class="row">
           <div class="col-lg-12 text-center">
             <h2 class="section-heading">Selected Papers from our Team</h2>
@@ -442,14 +442,14 @@
 			  <p class="text-muted"> </p>
 		</div>
 
-       <!--
+
 		<div class="text-center mt-4">
           <a class="btn btn-xl btn-outline-light" href="#">
             <i class="fa fa-download mr-2"></i>
             Download Now!
           </a>
-		</div> -->
-      </div>
+		</div>
+		</div>    -->
     </section>
 
 
